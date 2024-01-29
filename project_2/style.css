@@ -3,28 +3,120 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .top {
+    padding-bottom: 99px;
+    background: #000;
     padding-bottom: 99px;
 }
 
 .header {
+    background: rgb(17, 16, 16);
+    font-family: "Open Sans";
     padding-top: 39px;
     padding-bottom: 39px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.header__link {
+    color: var(--ffffff, #FFF);
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.center__block {
+    margin-top: 160px;
+    margin-bottom: 196;
+    display: flex;
+    gap: 128px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .top__content {
-    padding-top: 160px;
+    margin-top: 160px;
     margin-bottom: 197px;
+    display: flex;
+    gap: 128px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.top__info {
+    width: 604px;
 }
 
 .subtitle {
-    margin-bottom: 10px;
+    font-family: "Open Sans";
+    color: #3A68B8;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    text-transform: uppercase;
 }
 
 .title {
+    color: var(--ffffff, #FFF);
+    font-family: "Open Sans";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%;
+    /* 71.5px */
     margin-bottom: 40px;
+}
+
+.text {
+    color: var(--ffffff, #FFF);
+    font-family: "Open Sans";
+    font-style: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    width: 558px;
+    height: 87px;
 }
 
 .top__buttons {
     margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.button {
+    display: inline-flex;
+    padding: 15px 30px;
+    gap: 10px;
+    border-radius: 5px;
+    background: var(--3-a-68-b-8, #3A68B8);
+    color: var(--ffffff, #FFF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    align-items: center;
+}
+
+.top__image {
+    width: 414px;
+    height: 415px;
+}
+
+.top__logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 71px;
 }
