@@ -11,6 +11,11 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.center {
+    padding-left: 230px;
+    padding-right: 230px;
+}
+
 .header {
     padding-left: 231px;
     padding-right: 240px;
@@ -146,6 +151,8 @@ body {
     position: absolute;
 }
 
+.product {}
+
 .product__content {
     display: grid;
     grid-template-columns: repeat(3, 360px);
@@ -162,10 +169,6 @@ body {
     justify-content: center;
     flex-wrap: nowrap;
     gap: 16px;
-    position: relative;
-    width: 360px;
-    margin: 0 auto;
-    padding: 24px 16px 24px 16px;
 }
 
 .poducts__title {
