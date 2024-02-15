@@ -173,8 +173,39 @@
             position: relative;
         }
         
-        .product__img {
+        .product__img {}
+        
+        .product__img_block {
+            display: inline-block;
+            position: relative;
+            line-height: 0;
+        }
+        
+        .product__img_block:hover:after {
+            content: "";
+            display: block;
             width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: transparent;
+            background-color: #000000;
+            opacity: 0.6;
+        }
+        
+        .product__add:hover:before {
+            content: "Add to card";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 45%;
+            left: 32%;
+            position: absolute;
+            width: 139px;
+            height: 44px;
+            color: #FFFFFF;
+            border: 1px solid #FFFFFF;
         }
         
         .product__content {
@@ -220,6 +251,7 @@
         }
         
         .browse__text {
+            position: absolute;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -232,6 +264,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        
+        .browse__text:hover {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            position: absolute;
+            background-color: #F16D7F;
+            color: #FFFFFF;
         }
         
         .background {
@@ -276,12 +317,12 @@
             overflow: hidden;
             display: flex;
             justify-content: center;
-        }
-        
-        .fb__content {
             background-image: url(img/fb_bg.svg);
             background-repeat: no-repeat;
             background-size: cover;
+        }
+        
+        .fb__content {
             height: 448px px;
             width: 1600px;
             display: flex;
@@ -351,6 +392,10 @@
             border-radius: 0 30px 30px 0;
         }
         
+        .subscribe__button:hover {
+            background-color: #D73C3C;
+        }
+        
         .sub__email_text {
             padding-left: 20px;
             font-size: 14px;
@@ -413,6 +458,10 @@
             padding: 8px;
         }
         
+        .soc__link:hover {
+            background-color: #F16D7F;
+        }
+        
         @media (max-width: 1024px) {
             .center {
                 padding-left: calc(50% - 368px);
@@ -448,14 +497,14 @@
             }
             .feedback {
                 height: 693px;
+                background-size: cover;
+                background-position-x: 25%;
             }
             .fb__content {
                 flex-direction: column;
                 gap: 48px;
                 padding-top: 64px;
                 padding-bottom: 140px;
-                background-size: cover;
-                background-position-x: 25%;
             }
             .fb__subtitle {
                 padding-bottom: 27px;
