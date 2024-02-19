@@ -1,11 +1,15 @@
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,11 +18,43 @@
 
         <div class="header center">
             <div class="header__left">
+
+
                 <img src="img/img_logo.svg" alt="img_logo">
                 <img src="img/img_search.svg" alt="img_search">
             </div>
             <div class="header__right">
-                <img src="img/img_menu.svg" alt="img_menu">
+                <input type="checkbox" id="checkbox-toggle">
+                <label for="checkbox-toggle"><img width="32" height="23" class="checkbox__menu" src="img/img_menu.svg" alt="img_menu"></label>
+                <div class="menu">
+                    <h1 class="menu__title">MENU</h1>
+                    <div class="menu__block">
+                        <h2 class="menu__subtitle">MAN</h2>
+                        <p class="menu__text">Accessories</p>
+                        <p class="menu__text">Bags</p>
+                        <p class="menu__text">Denim</p>
+                        <p class="menu__text">T-Shirts</p>
+                    </div>
+
+                    <div class="menu__block">
+                        <h2 class="menu__subtitle">WOMAN</h2>
+                        <p class="menu__text">Accessories</p>
+                        <p class="menu__text">Jackets & Coats</p>
+                        <p class="menu__text">Polos</p>
+                        <p class="menu__text">T-Shirts</p>
+                        <p class="menu__text">Shirts</p>
+                    </div>
+                    <div class="menu__block">
+                        <h2 class="menu__subtitle">KIDS</h2>
+                        <p class="menu__text">Accessories</p>
+                        <p class="menu__text">Jackets & Coats</p>
+                        <p class="menu__text">Polos</p>
+                        <p class="menu__text">T-Shirts</p>
+                        <p class="menu__text">Shirts</p>
+                        <p class="menu__text">Bags</p>
+                    </div>
+                </div>
+
                 <img class="header__right_img" src="img/img_profile.svg" alt="img_profile">
                 <img class="header__right_img" src="img/img_box.svg" alt="img_box">
             </div>
@@ -35,10 +71,9 @@
 
                     <h2 class="promo__heading">OF LUXERIOS <span>FASHION</span></h2>
                 </div>
-
-
-
             </div>
+
+
         </div>
 
         <div class="sale center">
@@ -85,8 +120,13 @@
 
             <div class="product-box__content">
                 <div class="product">
-                    <div class="product__img_block product__add">
+                    <div class="product__img_block">
                         <img class="product__img" src="img/img_prod_1.svg" alt="img">
+
+                        <div class="product__add">
+                            <img class="product__cart_img" src="img/box_img.svg" alt="box_img">
+                            <p class="product__add_text">Add to Cart</p>
+                        </div>
                     </div>
 
                     <div class="product__content">
@@ -95,10 +135,16 @@
                         <p class="product__price">$52.00</p>
                     </div>
 
+
+
                 </div>
                 <div class="product">
-                    <div class="product__img_block product__add">
+                    <div class="product__img_block">
                         <img class="product__img" src="img/img_prod_2.svg" alt="img">
+                        <div class="product__add">
+                            <img class="product__cart_img" src="img/box_img.svg" alt="box_img">
+                            <p class="product__add_text">Add to Cart</p>
+                        </div>
                     </div>
 
                     <div class="product__content">
@@ -109,7 +155,12 @@
 
                 </div>
                 <div class="product">
-                    <div class="product__img_block product__add"><img class="product__img" src="img/img_prod_3.svg" alt="img"></div>
+                    <div class="product__img_block"><img class="product__img" src="img/img_prod_3.svg" alt="img">
+                        <div class="product__add">
+                            <img class="product__cart_img" src="img/box_img.svg" alt="box_img">
+                            <p class="product__add_text">Add to Cart</p>
+                        </div>
+                    </div>
 
                     <div class="product__content">
                         <a href="product.html" class="product__heading">ELLERY X M'O CAPSULE</a>
@@ -119,7 +170,12 @@
 
                 </div>
                 <div class="product">
-                    <div class="product__img_block product__add"><img class="product__img" src="img/img_prod_4.svg" alt="img"></div>
+                    <div class="product__img_block"><img class="product__img" src="img/img_prod_4.svg" alt="img">
+                        <div class="product__add">
+                            <img class="product__cart_img" src="img/box_img.svg" alt="box_img">
+                            <p class="product__add_text">Add to Cart</p>
+                        </div>
+                    </div>
 
 
                     <div class="product__content">
@@ -130,7 +186,12 @@
 
                 </div>
                 <div class="product">
-                    <div class="product__img_block product__add"><img class="product__img" src="img/img_prod_5.svg" alt="img"></div>
+                    <div class="product__img_block"><img class="product__img" src="img/img_prod_5.svg" alt="img">
+                        <div class="product__add">
+                            <img class="product__cart_img" src="img/box_img.svg" alt="box_img">
+                            <p class="product__add_text">Add to Cart</p>
+                        </div>
+                    </div>
 
                     <div class="product__content">
                         <a href="product.html" class="product__heading">ELLERY X M'O CAPSULE</a>
@@ -140,7 +201,12 @@
 
                 </div>
                 <div class="product">
-                    <div class="product__img_block product__add"><img class="product__img" src="img/img_prod_6.svg" alt="img"></div>
+                    <div class="product__img_block"><img class="product__img" src="img/img_prod_6.svg" alt="img">
+                        <div class="product__add">
+                            <img class="product__cart_img" src="img/box_img.svg" alt="box_img">
+                            <p class="product__add_text">Add to Cart</p>
+                        </div>
+                    </div>
 
                     <div class="product__content">
                         <a href="product.html" class="product__heading">ELLERY X M'O CAPSULE</a>
@@ -187,7 +253,6 @@
 
         <div class="feedback">
 
-            <!-- <img class="fb__bg_img" src="img/fb_bg.png" alt="fb_bg_image"> -->
             <div class="fb__content">
                 <div class="fb__content_1">
                     <img src="img/fb_face.svg" width="96" height="96" alt="face_img">
@@ -199,10 +264,10 @@
                     <p class="fb__subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
                     <div class="subscribe">
                         <div class="subscribe__email">
-                            <p class="sub__email_text">Enter Your Email</p>
-                        </div>
-                        <div class="subscribe__button">
-                            <p class="sub__text">Subscribe</p>
+                            <form action="#">
+                                <input class="sub__email_text" type="email" placeholder="Enter Your Email" required><br>
+                                <button type="submit" class="subscribe__button">Subscribe</button>
+                            </form>
                         </div>
                     </div>
                 </div>
