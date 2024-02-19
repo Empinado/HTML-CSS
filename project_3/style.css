@@ -222,8 +222,6 @@
             gap: 30px;
         }
         
-        .product {}
-        
         .product__img_block {
             display: flex;
             position: relative;
