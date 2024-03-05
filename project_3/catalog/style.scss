@@ -223,6 +223,7 @@
                 }
                 
                 .breadcrumbs {
+                    display: flex;
                     &__link {
                         font-style: normal;
                         font-weight: 300;
@@ -230,8 +231,13 @@
                         color: #636363;
                         line-height: 17px;
                     }
-                    &__link_site {
+                    &__link:not(:last-child)::after {
+                        content: '/';
+                        padding: 0 8px;
+                    }
+                    &__link:last-child {
                         color: $colorSelectSite;
+                        font-weight: 900;
                     }
                 }
                 

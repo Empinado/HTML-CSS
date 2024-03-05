@@ -113,6 +113,9 @@ input[type=checkbox] {
   line-height: 29px;
 }
 
+.breadcrumbs {
+  display: flex;
+}
 .breadcrumbs__link {
   font-style: normal;
   font-weight: 300;
@@ -120,8 +123,13 @@ input[type=checkbox] {
   color: #636363;
   line-height: 17px;
 }
-.breadcrumbs__link_site {
+.breadcrumbs__link:not(:last-child)::after {
+  content: "/";
+  padding: 0 8px;
+}
+.breadcrumbs__link:last-child {
   color: #F16D7F;
+  font-weight: 900;
 }
 
 .image-slide {

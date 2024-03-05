@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="top">
+        <header class="header center">
+            <div class="header__left">
+
+                <a href="index.html"><img class="header__img" src="img/img_logo.svg" alt="img_logo"></a>
+
+                <img src="img/img_search.svg" alt="img_search">
+            </div>
+            <div class="header__right">
+
+                <label for="burger"><img class="header__right_img"  src="img/img_menu.svg" alt="img_menu"></label>
+                <input id="burger" type="checkbox">
+                <nav class="nav">
+                    <ul>
+                        <li><a href="">link</a></li>
+                        <li><a href="">link</a></li>
+                        <li><a href="">link</a></li>
+                        <li><a href="">link</a></li>
+                    </ul>
+                </nav>
+
+
+                <img class="header__right_img" src="img/img_profile.svg" alt="img_profile">
+                <img class="header__right_img" src="img/img_box.svg" alt="img_box">
+            </div>
+
+        </header>
+
+        <div class="top-head center">
+            <h2 class="top-head__heading">SHOPPING CART</h2>
+
+        </div>
+
+        <div class="product-cart center">
+            <div class="product-cart__left">
+                <div class="product-cart__product">
+                    <img src="img/img_prod_1.png" alt="img_prod" class="product-cart__product__img">
+                    <div class="product-cart__product__options">
+                        <h1 class="product-cart__product__options__heading">MANGO PEOPLE <br>T-SHIRT</h1>
+                        <p class="product-cart__product__options__text">Price: <span class="product-cart__product__options__text__span product-cart__product__options__text__span_pink">$300</span></p>
+                        <p class="product-cart__product__options__text">Color: <span class="product-cart__product__options__text__span">Red</span></p>
+                        <p class="product-cart__product__options__text">Size: <span class="product-cart__product__options__text__span">Xl</span></p>
+                        <div class="product-cart__product__options__text__Quantity">
+                            <p class="product-cart__product__options__text">Quantity: <span>
+                            <form class="product-cart__product__options__form" action="#">
+                            <label class="product-cart__product__options__label" for="Quantity"></label>
+                            <input class="product-cart__product__options__input" type="text" name="Quantity" id="Quantity" value="1" placeholder="1" required>
+                            </form>
+                        </span></p>
+                        </div>
+                    </div>
+                    <img src="img/cross_img.svg" alt="cross_img" class="product-cart__product__img_cross">
+                </div>
+                <div class="product-cart__product">
+                    <img src="img/img_prod_2.png" alt="img_prod" class="product-cart__product__img">
+                    <div class="product-cart__product__options">
+                        <h1 class="product-cart__product__options__heading">MANGO PEOPLE <br>T-SHIRT</h1>
+                        <p class="product-cart__product__options__text">Price: <span class="product-cart__product__options__text__span product-cart__product__options__text__span_pink">$300</span></p>
+                        <p class="product-cart__product__options__text">Color: <span class="product-cart__product__options__text__span">Red</span></p>
+                        <p class="product-cart__product__options__text">Size: <span class="product-cart__product__options__text__span">Xl</span></p>
+                        <div class="product-cart__product__options__text__Quantity">
+                            <p class="product-cart__product__options__text">Quantity: <span>
+                            <form class="product-cart__product__options__form" action="#">
+                            <label class="product-cart__product__options__label" for="Quantity"></label>
+                            <input class="product-cart__product__options__input" type="text" name="Quantity" id="Quantity" value="1" placeholder="1" required>
+                            </form>
+                        </span></p>
+                        </div>
+                    </div>
+                    <img src="img/cross_img.svg" alt="cross_img" class="product-cart__product__img_cross">
+                </div>
+                <div class="product-cart__product__buttons">
+                    <button class="product-cart__product__buttons__button">CLEAR SHOPPING CART</button>
+                    <button class="product-cart__product__buttons__button">CONTINUE SHOPPING</button>
+                </div>
+            </div>
+            <div class="product-cart__right">
+                <h1 class="product-cart__right__heading">SHIPPING ADRESS</h1>
+                <form action="#" class="product-cart__right__form">
+                    <input class="product-cart__right__form__input" type="text" placeholder="Bangladesh" required>
+                    <input class="product-cart__right__form__input" type="text" placeholder="State" required>
+                    <input class="product-cart__right__form__input" type="text" placeholder="Postcode/Zip" required>
+                    <button class="product-cart__right__form__quote" type="submit">GET A QUOTE</button>
+                </form>
+
+                <div class="product-cart__right__total">
+                    <p class="product-cart__right__total__text">SUB TOTAL <span class="product-cart__right__total__text__span">$900</span></p>
+                    <p class="product-cart__right__total__text__2">GRAND TOTAL <span class="product-cart__right__total__text__2__span">$900</span></p>
+                    <div class="product-cart__right__total__line"></div>
+                    <button class="product-cart__right__total__button">PROCEED TO CHECKOUT</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="feedback center">
+
+            <div class="feedback__content">
+                <div class="feedback__content_1">
+                    <img src="img/fb_face.svg" width="96" height="96" alt="face_img">
+
+                    <p class="feedback__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                </div>
+                <div class="feedback__content_2">
+                    <h1 class="feedback__title">SUBSCRIBE</h1>
+                    <p class="feedback__subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <div class="subscribe">
+                        <div class="subscribe__email">
+                            <form action="#">
+                                <input class="subscribe__email_text" type="email" placeholder="Enter Your Email" required><br>
+                                <button type="submit" class="subscribe__button">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright center">
+            <div class="copyright__content">
+                <div class="copyright__text_block">
+                    <p class="copyright__text">© 2022 Brand All Rights Reserved.</p>
+                </div>
+
+                <div class="copyright__social_block"></div>
+                <div class="social">
+
+                    <div class="social__link"><img src="img/cr_img_3.svg" alt=""></div>
+                    <div class="social__link"><img src="img/cr_img_4.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
