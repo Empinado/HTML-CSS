@@ -15,11 +15,17 @@ summary::-webkit-details-marker {
 
 a {
     text-decoration: none;
-    &:hover {
-        color: $colorSelectSite;
+    &#nav__link {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: #6F6E6E;
+        padding-bottom: 11px;
+        padding-left: 54px;
+        transition: 0.3s;
     }
-    &:active {
-        color: $colorTextBlack;
+    &#nav__link:hover {
+        color: $colorSelectSite;
     }
 }
 
@@ -119,7 +125,7 @@ img {
     &__left {
         display: flex;
         flex-direction: column;
-        width: 360px;
+        min-width: 360px;
     }
     &__form {
         display: flex;
@@ -332,7 +338,6 @@ img {
         display: flex;
         align-items: center;
         height: 79px;
-        width: 100%;
         justify-content: space-between;
     }
     &__text_block {
@@ -367,5 +372,72 @@ img {
     }
     &__link:active {
         background-color: #D73C3C;
+    }
+}
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - $widthSiteTablet / 2);
+        padding-right: calc(50% - $widthSiteTablet / 2);
+    }
+    .header {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .none {
+        display: none;
+    }
+    .registration {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 40px;
+        &__left {
+            padding-right: 22px;
+        }
+        &__right {
+            &_title {
+                font-size: 16px;
+                line-height: 19px;
+            }
+            &_subtitle {
+                font-size: 16px;
+                line-height: 19px;
+            }
+            &_text {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+    .feedback {
+        height: 693px;
+        background-size: cover;
+        background-position-x: 25%;
+    }
+    .feedback__content {
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 64px;
+        padding-bottom: 140px;
+    }
+    .feedback__content_2 {
+        width: 100%;
+    }
+    .feedback__subtitle {
+        padding-bottom: 27px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-head {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .copyright__content {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .registration__right_text_span {
+        padding-left: 42px;
     }
 }

@@ -15,11 +15,17 @@ summary::-webkit-details-marker {
 
 a {
     text-decoration: none;
-    &:hover {
-        color: $colorSelectSite;
+    &#nav__link {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: #6F6E6E;
+        padding-bottom: 11px;
+        padding-left: 54px;
+        transition: 0.3s;
     }
-    &:active {
-        color: $colorTextBlack;
+    &#nav__link:hover {
+        color: $colorSelectSite;
     }
 }
 
@@ -171,7 +177,6 @@ img {
                     align-items: center;
                 }
             }
-            &__form {}
             &__label {
                 display: block;
             }
@@ -491,7 +496,6 @@ img {
         display: flex;
         align-items: center;
         height: 79px;
-        width: 100%;
         justify-content: space-between;
     }
     &__text_block {
@@ -526,5 +530,80 @@ img {
     }
     &__link:active {
         background-color: #D73C3C;
+    }
+}
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - $widthSiteTablet / 2);
+        padding-right: calc(50% - $widthSiteTablet / 2);
+    }
+    .header {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .none {
+        display: none;
+    }
+    .top-head {
+        padding-left: 16px;
+    }
+    .product-cart {
+        flex-direction: column;
+        &__product {
+            width: 734px;
+            &__buttons {
+                padding-top: 22px;
+                padding-bottom: 64px;
+            }
+        }
+        &__left {
+            align-items: center;
+        }
+        &__right {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 128px;
+            &__form {
+                width: 50%;
+            }
+            &__total {
+                margin-left: 15px;
+            }
+        }
+    }
+    .feedback {
+        height: 693px;
+        background-size: cover;
+        background-position-x: 25%;
+    }
+    .feedback__content {
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 64px;
+        padding-bottom: 140px;
+    }
+    .feedback__content_2 {
+        width: 100%;
+    }
+    .feedback__subtitle {
+        padding-bottom: 27px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-cart {
+        &__left {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        &__right {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+    .copyright__content {
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
