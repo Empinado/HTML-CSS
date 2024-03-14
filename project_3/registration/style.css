@@ -14,7 +14,7 @@ summary::-webkit-details-marker {
 a {
   text-decoration: none;
 }
-a#nav__link {
+a.nav__link {
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
@@ -23,7 +23,7 @@ a#nav__link {
   padding-left: 54px;
   transition: 0.3s;
 }
-a#nav__link:hover {
+a.nav__link:hover {
   color: #F16D7F;
 }
 
@@ -93,13 +93,32 @@ img {
 .nav {
   background-color: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  display: flex;
+  flex-direction: column;
   width: 232px;
-  padding: 32px;
   box-sizing: border-box;
   position: absolute;
+  z-index: 1;
   top: 75px;
   right: 0;
   transition: right 0.3s;
+}
+.nav__heading {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #000000;
+  padding-top: 37px;
+  padding-bottom: 24px;
+  padding-left: 33px;
+}
+.nav__title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #F16D7F;
+  padding-bottom: 12px;
+  padding-left: 33px;
 }
 
 .top-head {
@@ -127,7 +146,7 @@ img {
 .registration__left {
   display: flex;
   flex-direction: column;
-  min-width: 360px;
+  width: 360px;
 }
 .registration__form {
   display: flex;
@@ -209,6 +228,9 @@ img {
 }
 .registration__form_button:active {
   background-color: #222222;
+}
+.registration__right {
+  max-width: 652px;
 }
 .registration__right_title {
   font-style: normal;
@@ -442,7 +464,54 @@ img {
     padding-left: 32px;
     padding-right: 32px;
   }
-  .registration__right_text_span {
-    padding-left: 42px;
+}
+@media (max-width: 425px) {
+  .center {
+    padding-left: calc(50% - 187.5px);
+    padding-right: calc(50% - 187.5px);
+  }
+  .top-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .registration {
+    flex-direction: column;
+    align-items: center;
+  }
+  .registration__left {
+    padding-right: 0;
+  }
+  .registration__right {
+    padding-top: 40px;
+    width: 360px;
+  }
+  .feedback__content {
+    height: 550px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 64px;
+    gap: 59px;
+    justify-content: center;
+  }
+  .feedback__content_1 {
+    width: 343px;
+    height: 194px;
+  }
+  .feedback__content_2 {
+    width: 345px;
+    height: 123px;
+  }
+  .feedback__subtitle {
+    padding-bottom: 22px;
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 143px;
+  }
+  .copyright__content {
+    flex-direction: column-reverse;
   }
 }/*# sourceMappingURL=style.css.map */

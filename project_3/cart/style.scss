@@ -15,7 +15,7 @@ summary::-webkit-details-marker {
 
 a {
     text-decoration: none;
-    &#nav__link {
+    &.nav__link {
         font-size: 14px;
         font-weight: 400;
         line-height: 17px;
@@ -24,7 +24,7 @@ a {
         padding-left: 54px;
         transition: 0.3s;
     }
-    &#nav__link:hover {
+    &.nav__link:hover {
         color: $colorSelectSite;
     }
 }
@@ -92,13 +92,32 @@ img {
 .nav {
     background-color: $bgColorWhite;
     box-shadow: $boxShadow;
+    display: flex;
+    flex-direction: column;
     width: 232px;
-    padding: 32px;
     box-sizing: border-box;
     position: absolute;
+    z-index: 1;
     top: 75px;
     right: 0;
     transition: right .3s;
+    &__heading {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        color: $colorText;
+        padding-top: 37px;
+        padding-bottom: 24px;
+        padding-left: 33px;
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: $colorSelectSite;
+        padding-bottom: 12px;
+        padding-left: 33px;
+    }
 }
 
 .top-head {
@@ -190,7 +209,8 @@ img {
                 font-size: 18px;
                 line-height: 22px;
                 color: #656565;
-                margin-left: 24px;
+                margin-left: 15px;
+                margin-bottom: 7px;
                 border: 1px solid #65656540;
                 &:focus {
                     outline: none;
@@ -301,9 +321,6 @@ img {
                 font-size: 11px;
                 color: #4A4A4A;
                 line-height: 13px;
-                // padding-top: 39px;
-                // padding-right: 34px;
-                // padding-bottom: 12px;
                 &__span {
                     padding-left: 8px;
                 }
@@ -605,5 +622,121 @@ img {
     .copyright__content {
         padding-left: 32px;
         padding-right: 32px;
+    }
+}
+
+@media (max-width: 425px) {
+    .center {
+        padding-left: calc(50% - $widthSitePhone / 2);
+        padding-right: calc(50% - $widthSitePhone / 2);
+    }
+    .top-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-cart {
+        padding-top: 39px;
+        &__left {
+            gap: 32px;
+        }
+        &__product {
+            width: 358px;
+            height: 188px;
+            &__img {
+                width: 144px;
+                height: 188px;
+                &_cross {
+                    width: 9px;
+                    height: 11px;
+                }
+            }
+            &__options {
+                &__heading {
+                    font-size: 16px;
+                    padding-top: 13px;
+                    padding-bottom: 25px;
+                    line-height: 19px;
+                }
+                &__text {
+                    font-size: 14px;
+                    padding-bottom: 4px;
+                    line-height: 17px;
+                }
+                &__input {
+                    width: 24px;
+                    height: 15px;
+                    font-size: 10px;
+                }
+            }
+            &__buttons {
+                padding-top: 0;
+                width: 100%;
+                gap: 9px;
+                padding-bottom: 48px;
+                &__button {
+                    width: 175px;
+                    height: 33px;
+                    font-family: Lato;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 14px;
+                    text-align: center;
+                }
+            }
+        }
+        &__right {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 96px;
+            &__form {
+                width: 358px;
+            }
+            &__heading {}
+            &__total {
+                margin-left: 0;
+            }
+        }
+    }
+    .registration {
+        flex-direction: column;
+        align-items: center;
+        &__left {
+            padding-right: 0;
+        }
+        &__right {
+            padding-top: 40px;
+            width: 360px;
+        }
+    }
+    .feedback {
+        &__content {
+            height: 550px;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-top: 64px;
+            gap: 59px;
+            justify-content: center;
+        }
+        &__content_1 {
+            width: 343px;
+            height: 194px;
+        }
+        &__content_2 {
+            width: 345px;
+            height: 123px;
+        }
+        &__subtitle {
+            padding-bottom: 22px;
+        }
+    }
+    .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 143px;
+        &__content {
+            flex-direction: column-reverse;
+        }
     }
 }
